@@ -1,0 +1,152 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Charis Apostolidis
+title: Engineer
+email: charis.apostolidis@gmail.com
+website: www.sirahc5.github.io
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: facespics
+github_username:  sirahc5
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: charilaos-apostolidis
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+# about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hello world, my name is Charis (the "C" is silent) and I'm an engineering graduate with interest and experience in data, machine learning (ML), healthcare and related areas.
+
+content:
+  - title: Selected Personal Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Holiday Notifier
+        link: github.com/sirahc5/holiday-notifier
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          An ETL project that involves notifying the user (by email), if it is a holiday in their country the following day.
+
+          Tools used included: Python, SQL, Airflow, Pandas, JSON, smtplib
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: 3D Agriculture
+        link: https://www.3dagriculture.com/
+        # link_text: boringcompany.com
+        sub_title: Data Scientist
+        caption: February 2021 - May 2021
+        # quote: >
+        #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            3D Agriculture is an impact company fighting hunger and climate change through ultra-low-cost vertical farms. I led an initially independent project, which was eventually incorporated under the 3D Agriculture umbrella. My tasks included (but were not limited to) data wrangling/analysis/clustering, product development, market research and branding.
+      - layout: left
+        title: Cambridge Cancer Genomics
+        link: https://www.ccg.ai/
+        sub_title: Data Science Intern
+        caption: October 2018 - December 2018
+        description: |
+            Cambridge Cancer Genomics (now acquired by Dante Labs) was a Y-Combinator-backed healthtech startup building tools to enable oncologists to make the best therapeutic decisions for their patients. I was part of the ML team, working on the SomaticNET project (a somatic variant calling tool using Siamese neural networks; a paper on it was presented at NeurIPS 2018). My work included unit-testing and refactoring a module within that project, as well as replicating a similar mutation detection project for benchmarking purposes. I also got to do other fun things like providing support at a genomics hackathon (Sudo Challenge, sudochallenge.com)
+
+            I gained experience on: Docker, AWS, Linux terminal, PyTorch, Fastai, collaborative programming, testing, version control, continuous integration, bioinformatics file formats (BAM, BED, FASTA, VCF). I also substantially improved my knowledge of cancer biology and bioinformatics.
+      - layout: left
+        title: Velocity IT
+        link: https://www.velocity-it.com
+        sub_title: Robotics Engineer
+        caption: May 2018 - August 2018
+        description: |
+            Velocity IT is a business process automation company, offering digital transformation and business optimisation services by leveraging digital technologies. I was tasked with optimising a client’s process of making card payments. I worked in a team, designing, building and testing a robot that could automate the process of picking a card from a repository and performing two-factor authentication using a card reader. I created a program for reading the card reader screen using image processing (with OpenCV) and optical character recognition (OCR); all in Python. I programmed Arduino microcontrollers to enable various robotic functions. I also helped develop a chatbot (using certain Azure tools and C Sharp) for answering internal employee queries. Finally, I was responsible for promoting a business briefing event, hosted by Velocity.
+      - layout: left
+        title: Cardiff University
+        link: https://www.cardiff.ac.uk
+        sub_title: Computer Vision Researcher
+        caption: June 2016 - July 2016
+        description: |
+            The Cardiff Undergraduate Research Opportunities Programme (CUROP) is a summer research programme. I developed computer vision software tools, capable of accurately recognising human activities in surveillance videos; everything was programmed in MATLAB. The process pipeline consisted of: low-level local Dense Trajectory Feature extraction, mid-level representation using Fisher Vectors, dimensionality reduction using PCA, action/activity recognition using Hidden Markov Models. I tested different configurations on surveillance datasets from literature, achieving comparable recognition accuracies. Also, I evaluated recognition performance for unknown actions and established recognition probability thresholds (anomaly detection). Finally, I presented a poster in the CUROP conference.
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Cardiff University
+        caption: 2013 - 2017
+        sub_title: MEng Mechanical Engineering
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          Fourth-year projects: Design of intelligent drones for humanitarian purposes (grade: 1st); Design of a hybrid renewable energy park off the coast of South Wales (grade: 1st)
+
+          Third-year project: Classification of lower back pain patients into subgroups using ML (grade: 1st)
+
+          Other modules included: Object-oriented Computing, Computing, Robotics and Image Processing, Engineering Analysis (Mathematics), Business Management, Control and Instrumentation, Product Design, Fluid Mechanics, Thermodynamics, Solid Mechanics, Materials and Manufacture, Energy Studies, Applied Numerical Methods, Quality and Reliability, Condition Monitoring, Forensic Bioengineering, Dynamics, Labs, Intro to Economics, Law, Accounting and Management Science
+
+
+  # - title: A Little More About Me
+  #   layout: text
+  #   content: | # this will include new lines to allow paragraphs
+  #     Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+  #     - Rock climbing
+  #     - Gaming
+  #     - Knitting
+  #     - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+  #
+  #     Look at this cool image
+  #     ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
